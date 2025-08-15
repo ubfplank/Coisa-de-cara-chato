@@ -4,16 +4,13 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     images: {
-      allowFutureImage: true,
-    },
+      allowFutureImage: true
+    }
   },
   images: {
     loader: "default",
-    domains: [
-      "i.imgur.com", // domínio do Imgur
-      // você pode adicionar outros domínios aqui
-    ],
-  },
+    domains: ["i.imgur.com"]
+  }
 };
 
 module.exports = nextConfig;
