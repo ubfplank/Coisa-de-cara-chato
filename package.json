@@ -1,0 +1,15 @@
+{
+  "reactStrictMode": true,
+  "swcMinify": true,
+  "experimental": {
+    "images": {
+      "allowFutureImage": true
+    }
+  },
+  "images": {
+    "loader": "default",
+    "domains": [
+      "i.imgur.com"
+    ]
+  }
+}

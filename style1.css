@@ -20,6 +20,9 @@
             --cite:#a8a095;
             --h2:rgb(210,207,203);
         }
+     body {
+    margin: 0.5rem; /* relativo ao tamanho da fonte raiz */
+}
         * { margin:0; padding:0; box-sizing:border-box; font-family:Domine,Arial,Helvetica,sans-serif; }
         html { min-height:100%; background:var(--text-main);}
         body { background:var(--header-dark);}
