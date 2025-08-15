@@ -1,0 +1,167 @@
+<style>
+        :root {
+            --header:#FFFFFF;
+            --header-dark:#181A1B;
+            --header-item:#BB83E6;
+            --header-item-hover:#624973;
+            --title:#3a3a3a;
+            --title-dark:#c3beb6;
+            --description:#666666;
+            --description-dark:#a8a095;
+            --border:#3B4042;
+            --title-banner:#FFFFFF;
+            --border-banner:rgba(0,0,0,0.29);
+            --post:#b2aca2;
+            --title-post:#c8c3bc;
+            --text-main:#b2aca2;
+            --border-post:rgb(48,52,54);
+            --border-bottom:rgb(51,55,57);
+            --background-box:#262A2B;
+            --border-bottom-ol:rgb(52,56,58);
+            --cite:#a8a095;
+            --h2:rgb(210,207,203);
+        }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:Domine,Arial,Helvetica,sans-serif; }
+        html { min-height:100%; background:var(--text-main);}
+        body { background:var(--header-dark);}
+        header.main-header {
+            background:var(--header-dark);
+            color:#e70c0c;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:1rem;
+        }
+        .logo-container {
+            display:flex;
+            align-items:center;
+        }
+        .logo-container img {
+            width:32px;
+            height:32px;
+            margin-right:0.5rem;
+            border-radius:50%;
+        }
+        .logo-container span {
+            color:#ccc;
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+        nav {
+            display:none;
+        }
+        .banner {
+            position:relative;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:2rem 0;
+        }
+        .banner img {
+            width:100%;
+            max-width:1083px;
+            border-radius:16px;
+            object-fit:cover;
+            min-height:200px;
+        }
+        .banner-content {
+            position:absolute;
+            background:var(--border-banner);
+            padding:40px;
+            border-radius:78px;
+            text-align:center;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            max-width:763px;
+            width:90%;
+        }
+        .banner-content h1 {
+            color:var(--title-banner);
+            font-size:2.5rem;
+            margin-bottom:5px;
+            font-weight:300;
+        }
+        .banner-content p {
+            color:var(--title-banner);
+        }
+        @media (max-width:768px) {
+            .banner-content {
+                border-radius:30px;
+                padding:20px;
+            }
+            .banner-content h1 { font-size:1.2rem; }
+            .banner-content p { font-size:0.9rem; }
+        }
+        @media (max-width:480px) {
+            .banner-content { background:none; }
+        }
+        .posts-container {
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin:2rem auto;
+            width:90%;
+            max-width:900px;
+        }
+        .posts-grid {
+            display:grid;
+            grid-template-columns:1fr;
+            gap:25px;
+            width:100%;
+        }
+        @media (min-width:768px) {
+            .posts-grid { grid-template-columns:1fr 1fr; }
+        }
+        @media (min-width:1280px) {
+            .posts-grid { grid-template-columns:1fr 1fr 1fr; }
+        }
+        .post-card {
+            background:var(--header-dark);
+            border:1px solid var(--border);
+            border-radius:12px;
+            overflow:hidden;
+            display:flex;
+            flex-direction:column;
+            min-height:350px;
+        }
+        .post-card img {
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+        .post-card h2 {
+            color:var(--title-dark);
+            font-size:1.2rem;
+            margin:16px 16px 0 16px;
+            font-weight:500;
+        }
+        .post-card .excerpt {
+            color:var(--description-dark);
+            font-size:1rem;
+            margin:8px 16px 0 16px;
+        }
+        .post-card .read-more {
+            color:#08000e;
+            font-size:0.95rem;
+            margin:12px 16px 16px 16px;
+            cursor:pointer;
+            text-decoration:underline;
+            align-self:flex-start;
+            pointer-events:none;
+            text-decoration:none;
+        }
+    
+        footer {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:35px;
+            background:var(--header-dark);
+            height:40px;
+        }
+        footer p {
+            color:var(--header-item);
+            font-size:12px;
+        }
+    </style>
