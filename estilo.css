@@ -1,7 +1,7 @@
  :root {
-            --header-dark: #080808;
+            --header-dark: #f8efef;
             --title-banner: #FFFFFF;
-            --border-banner: rgba(0,0,0,0.29);
+            --border-banner: rgba(210, 231, 14, 0.932);
         }
 
         * {
